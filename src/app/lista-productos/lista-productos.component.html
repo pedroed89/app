@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col-4" style="margin:40px 0px;">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    </div>
+
+</div>
+<div class="row" style="margin-bottom: 30px;">
+    <div class="col-4" *ngFor="let item of productos">
+        <app-producto [nombre]="item.nombre" [precio]="item.precio" [imagen]="item.imagen"></app-producto>
+    </div>
+</div>
